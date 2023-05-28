@@ -1,0 +1,16 @@
+.parent {
+  border: 5px solid black;
+  height: 500px;
+  width: auto;
+  padding: 10px;
+  margin: 50px;
+  box-sizing: border-box;
+  position: relative;
+}
+.child {
+  border: 2px solid blue;
+  margin: 5px 10px;
+  position: absolute;
+  top: -30px;
+  left: -40px;
+}

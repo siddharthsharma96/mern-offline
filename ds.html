@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Stack part
+      class stack {
+        constructor() {
+          this.items = [];
+        }
+        add(element) {
+          return this.items.push(element);
+        }
+        remove() {
+          if (this.items == 0) {
+            return "null";
+          }
+          this.items.pop();
+        }
+        peek() {
+          return this.items[this.items.length - 1];
+        }
+        isEmpty() {
+          return this.items.length == 0;
+        }
+        printStack() {
+          var str = "";
+          for (var i = 0; i < this.items.length > 0; i++) {
+            str += this.items[i] + " ";
+          }
+          return str;
+        }
+      }
+      var s = new stack();
+      s.add(10);
+      s.add(20);
+      s.add(30);
+      console.log(s.printStack());
+      // s.remove();
+      // s.remove();
+      // s.remove();
+      // console.log(s.remove());
+      console.log(s.peek());
+      console.log(s.isEmpty());
+      // Queue part
+      class queue {
+        constructor() {
+          this.items = {};
+          this.front = 0;
+          this.rear = 0;
+        }
+        enqueue(item) {
+          this.items[this.rear] = item;
+          this.rear++;
+          return item;
+        }
+        dequee() {
+          var a = this.items[this.front];
+          delete this.items[this.front];
+          this.front++;
+          return a;
+        }
+        peek() {
+          return this.items[this.front];
+        }
+        prinQueue() {
+          return this.items;
+        }
+      }
+      var qu = new queue();
+      qu.enqueue(10);
+      qu.enqueue(20);
+      qu.enqueue(67);
+      qu.enqueue(89);
+      console.log(qu.prinQueue());
+      console.log(qu.dequee());
+      console.log(qu.peek());
+      console.log(qu.prinQueue());
+      // implementation of linked list
+      class nodes {
+        constructor(i) {
+          this.data = i;
+          this.next = null;
+        }
+      }
+      class linkedlist {
+        constructor() {
+          this.head = null;
+          this.size = 0;
+        }
+        add(ele) {
+          //create a new node
+          let node = new nodes(ele);
+          //for storing current node
+          var current;
+          //if list is empty make it head
+          if (this.head == null) {
+            this.head = node;
+          } else {
+            current = this.head;
+            // iterate to the end of the
+            // list
+            while (current.next) {
+              current = current.next;
+            }
+            current.next = node;
+          }
+          this.size++;
+        }
+        //insert node at any locatiion
+        insertAt(ele, index) {
+          if (index < 0 || index > this.size) {
+            return console.log("enter a valid index");
+          } else {
+            // create a node
+            let node = new nodes(ele);
+            let cur, prev;
+            cur = this.head;
+            // add element at index
+            if (index == 0) {
+              node.next = this.head;
+              this.head = node;
+            } else {
+              cur = this.head;
+              let it = 0;
+              while (it < index) {
+                it++;
+                prev = cur;
+                cur = cur.next;
+              }
+              node.next = cur;
+              prev.next = node;
+            }
+            this.size++;
+          }
+        }
+        removeFromIndex(e) {
+          if (e < 0 || e > this.size) {
+            return console.log("enter a valid index");
+          }
+        }
+        // prints the list items
+        printList() {
+          let cu = this.head;
+          let str = "";
+          while (cu) {
+            str += cu.data + " ";
+            cu = cu.next;
+          }
+          console.log(str);
+        }
+      }
+      var ll = new linkedlist();
+      ll.add(10);
+      ll.add(20);
+      ll.add(78);
+      ll.add(30);
+      // ll.insertAt(8, 0);
+      console.log(ll.head);
+      ll.printList();
+      // console.log(ll.printList());
+    </script>
+  </body>
+</html>
