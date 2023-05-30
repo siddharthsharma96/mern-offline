@@ -1,3 +1,8 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 .logo {
   background-color: black;
   color: white;
@@ -9,7 +14,10 @@
   color: white;
 }
 body {
-  background-color: aliceblue;
+  background-color: #f8f9fa !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
 }
 /* main {
   background-color: aliceblue;
@@ -19,16 +27,34 @@ body {
   padding: 20px;
   background-color: white;
   margin: 0%;
+  padding: 40px opx;
+  float: center;
   /* width: 100%; */
 }
 .row {
+  /* box-sizing: border-box; */
   margin-top: 30px;
-  text-align: center;
+  margin-bottom: 30px;
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: space-around;
+  /* border: 2px solid black; */
+  width: 100%;
+  /* text-align: center; */
+}
+ul {
+  text-decoration: none;
+  /* border: 5px white solid; */
+  display: inline;
+  float: right;
+}
+li {
+  display: inline-block;
 }
 .call-button,
 .secondary-btn {
   padding: 7px;
-  font-size: 15px;
+  font-size: 17px;
   background-color: #007bff;
   border-color: #007bff;
   color: white;
@@ -36,30 +62,93 @@ body {
   border-radius: 4px;
 }
 .secondary-btn {
-  background-color: lightgrey;
+  background-color: grey;
 }
 /* .thumbnails {
   /* background-color: aliceblue; *
  */
 .card {
-  height: 300px;
-  width: 23%;
+  height: 400px;
+  /* margin-right: 20px; */
+  width: 26%;
   display: inline-block;
   background-color: white;
-  margin-right: 20px;
+
   border: 1px solid lightgrey;
   /* background-color: aliceblue; */
+  box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
 }
 .card p {
   /* pading: 10px; */
-  margin: 10px;
+  margin: 30px 30px;
   /* border: 5px solid black; */
   font-size: 15px;
 }
 .image {
   width: 100%;
-  height: 170px;
+  height: 200px;
 }
 .button-group {
   display: inline-block;
+}
+.albumexample-para {
+  display: Block;
+  width: 40%;
+  line-height: 25px;
+
+  color: grey;
+  font-size: 1.25rem;
+  font-weight: 300;
+
+  /* text-align: center; */
+}
+.album-div {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}
+.albumexample > h1 {
+  font-size: 40px;
+
+  margin-top: 60px;
+}
+.btnexample {
+  margin-bottom: 40px;
+}
+.fa-solid {
+  color: white;
+}
+footer {
+  background-color: white;
+  height: 80px;
+}
+.footer-div {
+  /* margin: 30px 20px; */
+  padding: 20px 70px;
+}
+.footer-para {
+  width: 50%;
+  line-height: 25px;
+  color: grey;
+  float: left;
+  font-size: 16px;
+}
+.footer-a {
+  float: right;
+}
+.btn-group {
+  float: left;
+}
+.btn {
+  border: 1px solid black;
+}
+.span-group {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.btn-span {
+  align-self: center;
+  color: grey;
+  font-size: 15px;
 }
