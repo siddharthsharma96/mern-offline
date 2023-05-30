@@ -124,18 +124,20 @@ footer {
 }
 .footer-div {
   /* margin: 30px 20px; */
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
   padding: 20px 70px;
 }
 .footer-para {
   width: 50%;
   line-height: 25px;
   color: grey;
-  float: left;
+
   font-size: 16px;
 }
-.footer-a {
-  float: right;
-}
+
 .btn-group {
   float: left;
 }
