@@ -36,11 +36,28 @@ body {
   margin-top: 30px;
   margin-bottom: 30px;
   display: flex;
+
+  align-items: center;
+
+  border: 2px solid black;
   /* justify-content: space-between; */
   justify-content: space-around;
   /* border: 2px solid black; */
   width: 100%;
   /* text-align: center; */
+}
+.card {
+  /* height: 400px; */
+  /* margin-right: 20px; */
+  /* width: 26%; */
+  padding: 0px;
+  margin: 1.5rem;
+  flex-basis: 26%;
+  /* display: inline-block; */
+  background-color: white;
+  border: 1px solid lightgrey;
+  /* background-color: aliceblue; */
+  box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
 }
 ul {
   text-decoration: none;
@@ -67,17 +84,7 @@ li {
 /* .thumbnails {
   /* background-color: aliceblue; *
  */
-.card {
-  height: 400px;
-  /* margin-right: 20px; */
-  width: 26%;
-  display: inline-block;
-  background-color: white;
 
-  border: 1px solid lightgrey;
-  /* background-color: aliceblue; */
-  box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
-}
 .card p {
   /* pading: 10px; */
   margin: 30px 30px;
@@ -120,7 +127,11 @@ li {
 }
 footer {
   background-color: white;
-  height: 80px;
+  /* height: 80px; */
+  padding: 30px 0px;
+  margin-bottom: 0%;
+  display: flex;
+  /* border: 2px solid black; */
 }
 .footer-div {
   /* margin: 30px 20px; */
@@ -142,15 +153,36 @@ footer {
   float: left;
 }
 .btn {
-  border: 1px solid black;
+  border: 1px solid grey;
 }
 .span-group {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  margin: 1rem;
 }
 .btn-span {
   align-self: center;
   color: grey;
   font-size: 15px;
+}
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .card {
+    flex-basis: 35%;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 400px) {
+  .card {
+    flex-basis: 75%;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 600px) {
+  .card {
+    flex-basis: 45%;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .card {
+    flex-basis: 26%;
+  }
 }
