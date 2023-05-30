@@ -134,12 +134,10 @@ footer {
   width: 50%;
   line-height: 25px;
   color: grey;
-  float: left;
+
   font-size: 16px;
 }
-.footer-a {
-  float: right;
-}
+
 .btn-group {
   float: left;
 }
