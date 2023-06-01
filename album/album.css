@@ -24,10 +24,10 @@ body {
 } */
 .albumexample {
   text-align: center;
-  padding: 20px;
+  /* padding: 20px; */
   background-color: white;
   margin: 0%;
-  padding: 40px opx;
+  padding: 40px 0px;
   float: center;
   /* width: 100%; */
 }
@@ -36,15 +36,9 @@ body {
   margin-top: 30px;
   margin-bottom: 30px;
   display: flex;
-
   align-items: center;
-
-  border: 2px solid black;
-  /* justify-content: space-between; */
   justify-content: space-around;
-  /* border: 2px solid black; */
   width: 100%;
-  /* text-align: center; */
 }
 .card {
   /* height: 400px; */
@@ -142,7 +136,7 @@ footer {
   padding: 20px 70px;
 }
 .footer-para {
-  width: 50%;
+  flex-basis: 50%;
   line-height: 25px;
   color: grey;
 
@@ -166,23 +160,183 @@ footer {
   color: grey;
   font-size: 15px;
 }
-@media screen and (min-width: 600px) and (max-width: 800px) {
+@media screen and (max-width: 500px) {
   .card {
-    flex-basis: 35%;
+    flex-basis: 80%;
+  }
+  .card p {
+    font-size: 16px;
+  }
+  .image {
+    height: 160px;
+  }
+  .albumexample > h1 {
+    font-size: 30px;
+    margin-top: 40px;
+  }
+
+  .albumexample-para {
+    /* border: 1px solid black; */
+    flex-basis: 95%;
+    font-size: 1.2rem;
+  }
+  .albumexample {
+    padding: 2px 0px;
+  }
+  .call-button,
+  .secondary-btn {
+    font-size: 14px;
+  }
+  .hide {
+    display: none;
+  }
+  footer {
+    padding: 0px;
+  }
+  .footer-div {
+    padding: 10px 30px;
+  }
+  .footer-para {
+    flex-basis: 70%;
+    font-size: 14px;
+    line-height: 15px;
   }
 }
-@media screen and (min-width: 200px) and (max-width: 400px) {
+@media screen and (min-width: 501px) and (max-width: 700px) {
   .card {
-    flex-basis: 75%;
+    flex-basis: 40%;
+  }
+  .card p {
+    font-size: 14px;
+  }
+  .image {
+    height: 160px;
+  }
+  .albumexample > h1 {
+    font-size: 30px;
+    margin-top: 40px;
+  }
+
+  .albumexample-para {
+    /* border: 1px solid black; */
+    flex-basis: 95%;
+    font-size: 1.2rem;
+  }
+  .albumexample {
+    padding: 2px 0px;
+  }
+  .call-button,
+  .secondary-btn {
+    font-size: 14px;
+  }
+  .hide {
+    display: none;
+  }
+  footer {
+    padding: 0px;
+  }
+  .footer-div {
+    padding: 10px 30px;
+  }
+  .footer-para {
+    flex-basis: 70%;
+    font-size: 15px;
+    line-height: 15px;
   }
 }
-@media screen and (min-width: 400px) and (max-width: 600px) {
+@media screen and (min-width: 701px) and (max-width: 800px) {
   .card {
-    flex-basis: 45%;
+    flex-basis: 40%;
+  }
+  .card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .span-group {
+    margin-top: 0.25rem;
+  }
+  .image {
+    height: 160px;
+  }
+  .albumexample > h1 {
+    font-size: 40px;
+  }
+
+  .albumexample-para {
+    /* border: 1px solid black; */
+    flex-basis: 95%;
+    font-size: 1.25rem;
+  }
+  .albumexample {
+    padding: 2px 0px;
+  }
+  .call-button,
+  .secondary-btn {
+    font-size: 18px;
+  }
+  .hide {
+    display: none;
+  }
+  footer {
+    padding: 0px;
+  }
+  .footer-div {
+    padding: 10px 30px;
+  }
+  .footer-para {
+    flex-basis: 70%;
+    font-size: 16px;
+    line-height: 17px;
   }
 }
-@media screen and (min-width: 800px) and (max-width: 1000px) {
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+  .card {
+    flex-basis: 27%;
+  }
+  .card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .span-group {
+    margin-top: 0.25rem;
+  }
+  .image {
+    height: 160px;
+  }
+  .albumexample > h1 {
+    font-size: 40px;
+  }
+
+  .albumexample-para {
+    /* border: 1px solid black; */
+    flex-basis: 95%;
+    font-size: 1.25rem;
+  }
+  .albumexample {
+    padding: 2px 0px;
+  }
+  .call-button,
+  .secondary-btn {
+    font-size: 18px;
+  }
+  .hide {
+    display: none;
+  }
+  footer {
+    padding: 0px;
+  }
+  .footer-div {
+    padding: 10px 30px;
+  }
+  .footer-para {
+    flex-basis: 70%;
+    font-size: 16px;
+    line-height: 17px;
+  }
+}
+
+/* @media screen and (min-width: 800px)  {
   .card {
     flex-basis: 26%;
   }
-}
+} */
